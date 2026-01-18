@@ -14,10 +14,7 @@ void Setup(AlxWindow* w){
 void Update(AlxWindow* w){
     
     Sprite sp = Sprite_Null();
-    int width = 0,height = 0;
-    sp.img = RLCamera_Get(&rlc,&width,&height);
-    sp.w = width;
-    sp.h = height;
+    sp.img = RLCamera_Get(&rlc,&sp.w,&sp.h);
     
     Clear(BLACK);
 
